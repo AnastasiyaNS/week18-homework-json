@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Планировщик задач</title>
+</head>
+<body>
+    <main>
+        <h1>Планировщик задач</h1>
+        <form name="formList" class="form">
+            <label for="task">Добавить задачу</label>
+            <div id="addTask">
+            <input type="text" name="task" id="task">
+            <button name="button" type="button" onclick="checkMessage()">Добавить</button>
+            </div>
+            <div id="taskList">
+                <label for="taskListTitle">Список задач:</label>
+                <label id="taskListFull"></label>
+            </div>
+            <button type="submit" name="button" id="btnClear" disabled="true" onclick="checkReset()">Очистить список задач
+            </button>
+        </form>
+    </main>
+    <script src="./assets/script/script.js"></script>
+</body>
+</html>
